@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31025.194
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Invitation App Web API", "Invitation App Web API\Invitation App Web API.csproj", "{F1357B9A-7A59-423B-A531-7B4C49C0E61C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F1357B9A-7A59-423B-A531-7B4C49C0E61C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1357B9A-7A59-423B-A531-7B4C49C0E61C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1357B9A-7A59-423B-A531-7B4C49C0E61C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1357B9A-7A59-423B-A531-7B4C49C0E61C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {45604BA1-27B3-4272-89C9-984AA48775D2}
+	EndGlobalSection
+EndGlobal
