@@ -3,7 +3,7 @@ using Invitation_App_Web_API.Models.RequestModels;
 using Invitation_App_Web_API.Models.ViewModels;
 using Invitation_App_Web_API.Service;
 
-namespace Invitation_App_Web_API.Services
+namespace Invitation_App_Web_API.Services.User
 {
     public interface IUserService
     {

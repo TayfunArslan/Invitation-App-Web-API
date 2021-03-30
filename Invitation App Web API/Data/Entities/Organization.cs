@@ -7,6 +7,8 @@ namespace Invitation_App_Web_API.Data.Entities
     {
         public string Name { get; set; }
         public string Code { get; set; }
+        public string Place { get; set; }
+        public int? MaxParticipantsNumber { get; set; }
         public DateTime? StartDateTime { get; set; }
         public DateTime? EndDateTime { get; set; }
         public long CreatorId { get; set; }

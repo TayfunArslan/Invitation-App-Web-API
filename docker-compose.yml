@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  invitationappwebapi:
+    image: ${DOCKER_REGISTRY-}invitationappwebapi
+    build:
+      context: .
+      dockerfile: Invitation App Web API/Dockerfile

@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31025.194
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Invitation App Web API", "Invitation App Web API\Invitation App Web API.csproj", "{F1357B9A-7A59-423B-A531-7B4C49C0E61C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Invitation App Web API", "Invitation App Web API\Invitation App Web API.csproj", "{F1357B9A-7A59-423B-A531-7B4C49C0E61C}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{358E6EA9-5447-42C5-8540-7BA936561052}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{F1357B9A-7A59-423B-A531-7B4C49C0E61C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F1357B9A-7A59-423B-A531-7B4C49C0E61C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F1357B9A-7A59-423B-A531-7B4C49C0E61C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{358E6EA9-5447-42C5-8540-7BA936561052}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{358E6EA9-5447-42C5-8540-7BA936561052}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{358E6EA9-5447-42C5-8540-7BA936561052}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{358E6EA9-5447-42C5-8540-7BA936561052}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

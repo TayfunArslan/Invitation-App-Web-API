@@ -1,9 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
-using Invitation_App_Web_API.Data.Entities;
 using Invitation_App_Web_API.Data.UnitOfWork;
 using Invitation_App_Web_API.Enums;
 using Invitation_App_Web_API.Helpers;
@@ -11,9 +8,8 @@ using Invitation_App_Web_API.Models.RequestModels;
 using Invitation_App_Web_API.Models.ViewModels;
 using Invitation_App_Web_API.Service;
 using Microsoft.Extensions.Logging;
-using Microsoft.OpenApi.Validations;
 
-namespace Invitation_App_Web_API.Services
+namespace Invitation_App_Web_API.Services.User
 {
     public class UserService : IUserService
     {
@@ -87,7 +83,7 @@ namespace Invitation_App_Web_API.Services
                     throw new Exception("User already exist");
                 }
 
-                var user = _mapper.Map<User>(userModel);
+                var user = _mapper.Map<Data.Entities.User>(userModel);
                 user.IsActive = true;
                 user.IsDeleted = false;
                 user.CreateDateTime = DateTime.Now;
@@ -131,7 +127,8 @@ namespace Invitation_App_Web_API.Services
             {
                 var user = await _uow.UserRepository.GetSingleAsync(u => u.Id == userId && u.IsActive && !u.IsDeleted);
 
-                _uow.UserRepository.Delete(user);
+                user.IsActive = false;
+                user.IsDeleted = true;
 
                 var result = await _uow.SaveChangesAsync();
 

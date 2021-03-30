@@ -1,20 +1,14 @@
-using Microsoft.AspNetCore.Builder;
+ï»¿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Invitation_App_Web_API.Data;
 using Invitation_App_Web_API.Data.UnitOfWork;
-using Invitation_App_Web_API.Services;
+using Invitation_App_Web_API.Services.User;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
@@ -65,8 +59,8 @@ namespace Invitation_App_Web_API
                     ValidateIssuer = true,
                     ValidateAudience = true,
                     ValidateLifetime = true,
-                    ValidIssuer = "Tayfun Arslan A.Þ.",
-                    ValidAudience = "Tayfun Arslan A.Þ.",
+                    ValidIssuer = "Tayfun Arslan A.Åž.",
+                    ValidAudience = "Tayfun Arslan A.Åž.",
                     IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("TayfunsSecureKey"))
                 };
             });
